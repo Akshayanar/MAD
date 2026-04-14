@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDF6F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Tasks 🌸"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#4A148C"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- PRIORITY SWITCH -->
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchPriority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="High Priority 🔥"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- CATEGORY LABEL -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="5dp"/>
+
+        <!-- SPINNER -->
+        <Spinner
+            android:id="@+id/spinnerRole"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#EDE7F6"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- PROGRESS LABEL -->
+        <TextView
+            android:id="@+id/tvSeekLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Progress: 0%"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="5dp"/>
+
+        <!-- SEEKBAR -->
+        <SeekBar
+            android:id="@+id/seekBarProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progressTint="#BA68C8"
+            android:thumbTint="#7E57C2"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- DATE BUTTON -->
+        <Button
+            android:id="@+id/btnDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Pick Date 📅"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="#212121"
+            android:backgroundTint="#C5E1A5"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- SAVE BUTTON -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Save Task ✅"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#7E57C2"/>
+
+        <!-- SUMMARY -->
+        <TextView
+            android:id="@+id/tvSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your task will appear here..."
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#212121"
+            android:padding="15dp"
+            android:layout_marginTop="20dp"
+            android:background="#FFF3E0"/>
+
+    </LinearLayout>
+
+</ScrollView>
